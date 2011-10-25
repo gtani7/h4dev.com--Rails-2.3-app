@@ -1,0 +1,150 @@
+
+<p class="style1">h4dev.com: focused search results for Ruby / Rails / JavaScript developers</p>
+<p class="style1">Questions? E-mail: gene period tani AT-sign gmail period com</p>
+<ul class="style1">
+<li class="marginbottom_2em ">How to query the database: </li>
+	<ul class="marginbottom_2em ">
+	
+		<li class="marginbottom_1em">ALL query terms you enter must be found / matched to return a hit on a db record , i.e. they're "AND"ed together.  (Except that ferret removes common "stop words" before hitting query terms against ferret index) </li>
+		<li class="marginbottom_1em">Try to edit out of your search terms: "stopwords" or short "connector" words like "if", "in", "and" (unless you're looking for "in" operator in javascript or ruby).  Start with 3 or 4 words, look at Results Page ("Sphinx Hits", "Ferret Hits") for additional query words from topics on the left, mousing over links on the right</li>
+		<li>The query against ferret's index will remove <a  href="http://esl.about.com/library/vocabulary/bl1000_list1.htm">~150 common English words</a> (stopwords) from the query terms.   </li>
+		<hr/>
+			<li class="marginbottom_1em margintop_1em">Each database record contains multiple URLs discussing a specific issue. There's a limited (95,000) number of URL's, but each one contributes to discussion</li>
+		
+		<li class="marginbottom_1em">Database records are organized in a 4-level topic map hierarchy.  The captions on the left on the first results page (under "Sphinx search hits", "Ferret" ..) are major topic, minor topic, subtopic, sub-sub topic</li>
+	</ul>
+	<hr/>
+	<ul>	
+		<li class="marginbottom_1em">Acronyms, compound words ("ActiveRecord"): we try to match both short form and spelled-out, multi-word form, but you may try both</li>
+		<li class="marginbottom_2em">We "stem" query terms you enter, i.e. reduce to a common form, so "short", "shorts" and "shortly" should return same number hits</li>
+		
+		<li class="marginbottom_1em">First Page: "Sphinx Search Hits, Ferret.." Links on right: The number is the number of URL's in db record; If it says "Mouseover" after that you hover for a preview of that db record's indexed content.</li>
+		
+		<li>Second Page: "Details: Selected Database Record" The record you selected is first one presented.  Possibly related ones follow</li>
+		
+	</ul>
+</ul>	
+<hr/>
+<ul class="style1">
+<li>What's in the database: Languages: </li>
+	<ul>
+		<li>ruby, JRuby;</li> 
+		<li>	python (sorry, not up-to-date)</li>
+		<li> javascript</li>
+		<li>erlang </li>
+		<li> R language (stats/probability), Weka data mining, numpy / scipy / matplotlib packages</li>
+	</ul>
+</ul>
+
+<ul class="style1">
+<li>Software Engineering </li>
+	<ul>
+		<li>Design Patterns, Object-oriented Design, Algorithm / Data Structures, Functional Programming</li>
+	</ul>
+</ul>
+
+<ul class="style1">
+<li> text editors / IDE's; Source / Revision / Version Control </li>
+	<ul>
+		<li>vim, emacs, Textmate, eclipse, netBeans</li>
+		<li>git, Mercurial, SVN</li>
+	</ul>
+</ul>
+
+<ul class="style1">
+<li> Operating Systems: Network / Sys Admin, Configure, Install</li>
+	<ul>
+		<li>linux: Debian, ubuntu, centOS, Fedora Core, Red Hat </li>
+		<li>Mac OS X, FreeBSD, OpenBSD</li>
+		<li>Virtual Machines, the Cloud: VMware, Xen, Amazon S3, EC2</li>
+		<li></li>
+		<li>MS Windows admins & devs: not much here except IronRuby, ironPython, F# </li>
+	</ul>
+</ul>
+<ul class="style1">
+<li>Network, Unix / linux, Web App Security </li>
+	<ul>
+		<li>System Audits, Penetration testing, </li>
+		<li>XSS, CSRF;  JSON, SQL and javascript injection</li>
+	</ul>
+</ul>
+<ul class="style1">
+<li>E-commerce, credit cards, payment gateways </li>
+	<ul>
+		<li>PayPal, Amazon Flexible Payments, Google Checkout</li>
+	</ul>
+</ul>
+<ul class="style1">
+<li> App Frameworks</li>
+	<ul>
+		<li>Rails, merb, sinatra, Facebook, Twitter</li>
+	</ul>
+</ul>
+
+<ul class="style1">
+<li>Full-Text Search / Indexing Engines </li>
+	<ul>
+		<li>lucene / SOLR, sphinx search, ferret: tokenizers, stemming, query execution </li>
+		<li>UTF-8, unicode, ruby / rails associations, join tables, instance methods, ..</li>
+	</ul>
+</ul>
+
+<ul class="style1">
+<li>CSS, stylesheets, HTML </li>
+	<ul>
+		<li>HTML 4, 5, XHTML specifications and proposals</li>
+		<li>HAML, eRb, Blueprint, 960, YUI</li>
+		<li>Browser Javascript and rendering engines, bugs: IE 6, 7, 8; Firefox 3</li>
+	    <li>Limited coverage: Safari, google chrome / chromium, Opera </li>
+	</ul>
+</ul>
+<ul class="style1">
+<li>Javascript language; ajax libraries, frameworks </li>
+	<ul>
+		<li>Javascript syntax; ECMAscript specifications</li>
+		<li>JQuery, YUI, Prototype library, mooTools, extJS</li>
+	</ul>
+</ul>
+<ul class="style1">
+<li>Relational and document-oriented database; DBMS</li>
+	<ul>
+		<li>mySQL, postgreSQL, couchDB</li>
+		<li>SQL syntax: joins, WHERE, SORT BY, LIMIT, IF, .. DBMS differences</li>
+		<li>performance tuning, database design: partition, shard, backups, query logging/analysis</li>
+	</ul>
+</ul>
+<ul class="style1">
+<li>unit testing, BDD: ruby, python </li>
+	<ul>
+		<li>ruby Test::Unit, rspec, cucumber, shoulda, ..</li>
+		<li>javascript: Firebug, ..</li>
+	</ul>
+</ul>
+<ul class="style1">
+<li>Web hosts, servers, load balancing/reverse proxy</li>
+	<ul>
+		<li>nginx, mongrel, apache, Phusion Passenger / mod_rails; rack, WSGI</li>
+		<li>Slicehost, Heroku, Engine Yard</li>
+	</ul>
+</ul>
+
+<ul class="style1">
+<li>startups</li>
+	<ul>
+		<li>Stuff we found interesting from Hacker News </li>
+	</ul>
+</ul>
+
+<ul class="style1">
+<li>Intellectual property, copyright, software licenses; Net Neutrality, censorship, filtering</li>
+	<ul>
+		<li>Stuff we found interesting from Reddit, Slashdot </li>
+	</ul>
+</ul>
+
+<ul class="style1">
+<li>NLP, natural language processing, data mining, computational linguistics</li>
+	<ul>
+		<li>not a whole lot here yet, try it, fill up our query log!</li>
+	</ul>
+</ul>

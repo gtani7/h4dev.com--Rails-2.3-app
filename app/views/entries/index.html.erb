@@ -1,0 +1,76 @@
+
+<h1>Sphinx search hits:</h1>
+
+<% if @sphinx_hits %>
+<div id="right">
+	<%= @sphinx_hits.size %> records returned, 20 max
+</div>
+<div class="clear"></div>
+
+<div id="sph_hits">
+<ul id="quiz">		
+	<% @sphinx_hits.each do |sph_hit| %>
+	
+		<%= render :partial => "show_sph_hit2",			
+
+			:locals => { :sph_hit => sph_hit } %>  
+	<% end %>
+</ul>
+</div>
+<% else %>
+<h3>Unavailable: sphinx query / index / search </h3>
+	
+<% end %>
+
+<div class="clear"></div>
+<hr/>
+<h1>ferret search hits:</h1>
+
+<% if @ferret_hits %>
+<div id="left">
+	<%= @ferret_hits.size %> records returned, 15 max
+</div>
+<div class="clear"></div>
+
+<div id="fer_hits">
+<ul id="quiz1">		
+	<% @ferret_hits.each do |sph_hit| %>
+		<%= render :partial => "show_sph_hit2",
+
+			:locals => { :sph_hit => sph_hit } %>  
+		
+	<% end %>
+</ul>
+</div>	
+<% else %>
+<h3>Unavailable: Ferret query / index / search </h3>
+
+<% end %>
+<div class="clear"></div>
+<hr/>
+<h1>SOLR search hits:</h1>
+
+<% if @solr_hits %>
+<span id="middle">
+	<%= @solr_hits.size %> records returned
+</span>
+<div class="clear"></div>
+
+<div id="sol_hits">
+<ul id="quiz2">		
+	<% @solr_hits.each do |sph_hit| %>
+		<%= render :partial => "show_sph_hit2",
+
+			:locals => { :sph_hit => sph_hit } %>  
+		
+	<% end %>
+</ul>
+</div>	
+<% else %>
+<h3> Unavailable: SOLR query / index / search </h3>
+
+<% end %>
+<div class="clear"></div>
+
+
+

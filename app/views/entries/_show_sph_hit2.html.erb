@@ -1,0 +1,15 @@
+<li class="paddingbottom_06em paddingtop_06em borderbottom_gray" id="sph_hit_<%= sph_hit.id %>">
+    <%  require 'cgi'%>
+	<%= h CGI::unescapeHTML(sph_hit.consol_rowhead) %>
+	 <%= link_to sph_hit.consol_statistic, detail_path(sph_hit),
+		:title => sph_hit.descrip_trunc.gsub("<br/>","    ")
+			
+			# consol_statistic_prod in production env
+			
+			# details_path			##doesn't work, no result	
+			#:controller => "details" 			## added 4 june 09  ## was ":action => show"																			
+			#:id => "sph_hit.random17"  		## was ":id = sph_hit.id" 
+			
+			%> 
+	
+</li>

@@ -1,0 +1,23 @@
+
+<h1>Details: Selected database record:</h1>
+<div class="clear"></div>
+
+<% if @entry %>
+    <% @entry_hits = [ @entry, Entry.find_by_id(1+@entry.id), Entry.find_by_id(-1 + @entry.id)] %>
+    
+    <% @entry_left = Entry.find_by_id(-200000 + @entry.id) %>
+    <% @entry_right= Entry.find_by_id( 200000 + @entry.id) %>
+    
+    <% @entry_hits += @entry_left if @entry_left %>
+    <% @entry_hits += @entry_right if @entry_right %>
+    
+    <div id="sph_hits">
+        <ul id="quiz">		
+	    <% @entry_hits.each do |ent_hit| %>
+		    <%= render :partial => "show_ent_hit",
+
+			:locals => { :ent_hit => ent_hit } %>  
+        <% end %>
+        </ul>
+    </div>	
+<% end %>

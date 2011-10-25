@@ -1,0 +1,8 @@
+*.log
+*.pid
+db/sphinx/development/*
+index/development/entry/*
+log/*
+db/migrate/dbin*.txt
+db/sphinx/development/entry_core.*
+index/development/entry/*.cfs
